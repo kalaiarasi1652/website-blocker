@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Guard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Focus Guard</h2>
+  <input type="text" id="url-input" placeholder="Enter site URL to block (e.g. facebook.com)" />
+  <input type="number" id="duration-input" placeholder="Duration (minutes)" min="1" max="1440" />
+  <button id="block-btn">Block Site</button>
+  <button id="open-options">Settings</button>
+
+  <h3>Currently Blocked Sites</h3>
+  <ul id="blocked-list"></ul>
+  <a href="insights.html" target="_blank">View Detailed Insights</a>
+
+  <script src="popup.js"></script>
+</body>
+</html>

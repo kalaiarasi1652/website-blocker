@@ -1,0 +1,39 @@
+/* insights.css */
+
+body {
+  background-color: #1a202c;
+  color: #edf2f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#insights-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#insights-list li {
+  background-color: #2d3748;
+  border: 1px solid #4a5568;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#insights-list li:hover {
+  background-color: #3c4a5c;
+}

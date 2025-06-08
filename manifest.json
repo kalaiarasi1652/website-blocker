@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Guard",
+  "version": "1.0",
+  "description": "Block distracting websites and boost productivity.",
+  "icons": {
+    "16": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "notifications",
+    "alarms",
+    "tabs",
+    "idle",
+    "webNavigation",
+    "identity"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html", "styles.css", "assets/icon.png","insights.html","insights.js", "insights.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

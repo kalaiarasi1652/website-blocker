@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Guard - Emergency Password</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <h2>Emergency Password Settings</h2>
+
+  <div id="set-password-section">
+    <label for="new-password">New Password:</label>
+    <input type="password" id="new-password" placeholder="Enter new password" />
+
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" placeholder="Confirm new password" />
+
+    <button id="save-password-btn">Save Password</button>
+  </div>
+
+  <div id="change-password-section" style="display:none;">
+    <label for="current-password">Current Password:</label>
+    <input type="password" id="current-password" placeholder="Enter current password" />
+
+    <label for="new-password-change">New Password:</label>
+    <input type="password" id="new-password-change" placeholder="Enter new password" />
+
+    <label for="confirm-password-change">Confirm New Password:</label>
+    <input type="password" id="confirm-password-change" placeholder="Confirm new password" />
+
+    <button id="change-password-btn">Change Password</button>
+  </div>
+
+  <p id="status"></p>
+
+  <script src="options.js"></script>
+</body>
+</html>

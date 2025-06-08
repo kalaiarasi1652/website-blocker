@@ -1,0 +1,66 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #001f4d; /* Dark navy */
+  color: white;
+  margin: 0;
+  padding: 20px;
+  min-width: 360px;
+  max-width: 420px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px; /* space between elements */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+input {
+  background-color: #003366; /* Slightly lighter navy */
+  color: white;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: #aabbee;
+}
+
+button {
+  background-color: #0059b3; /* brighter navy */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003f7f; /* darker navy on hover */
+}
+
+#status {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#remove-password-btn {
+  background-color: #cc0000;
+  margin-top: 20px;
+}
+
+#remove-password-btn:hover {
+  background-color: #990000;
+}
